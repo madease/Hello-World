@@ -14,6 +14,7 @@ def generateText(txt, font, color):
 	t.setpos(xpos, ypos)
 	t.write(txt,move=True,align="center",font=(font,30,"normal"))
 	
+#In order for fonts to vary randomly, they must be installed in your font folder. See attached font files to download.
 
 #
 thingsToSay = ["AGENT ORANGE", "FUCK TRUMP", "WHAT HAVE WE DONE?", "FUCK DONALD TRUMP", "YOUR TIME WILL COME", "BLACK LIVES MATTER", "RESIST", "DEPLORABLE", "FUCK THE PRESIDENT", "SHAME!", "LITERALLY THE WORST", "BLOTUS", "YOURE FIRED", "IMPEACH THE PRESIDENT", "AMERICANHORRORSTORY", "TAKE A KNEE"]
