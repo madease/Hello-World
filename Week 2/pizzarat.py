@@ -3,14 +3,14 @@ import time
 import os
 
 
-catFX = pyglet.media.load( "/Users/HOU/Desktop/Sounds/cat.wav", streaming=False)
-subwayFX = pyglet.media.load("/Users/HOU/Desktop/Sounds/subway.wav", streaming=False)
-pizzaFX = pyglet.media.load("/Users/HOU/Desktop/Sounds/pizza.wav", streaming=False)
-ratFX = pyglet.media.load( "/Users/HOU/Desktop/Sounds/rat.wav", streaming=False)
-cockroachFX = pyglet.media.load("/Users/HOU/Desktop/Sounds/cockroach.wav", streaming=False)
-gameoverFX = pyglet.media.load("/Users/HOU/Desktop/Sounds/gameover.wav", streaming=False)
-endcreditsFX = pyglet.media.load("/Users/HOU/Desktop/Sounds/endcredits.wav", streaming=False)  
-snackFX = pyglet.media.load("/Users/HOU/Desktop/Sounds/snack.wav", streaming=False)    
+catFX = pyglet.media.load( "/Users/johnyvino/Desktop/Sounds/cat.wav", streaming=False)
+subwayFX = pyglet.media.load("/Users/johnyvino/Desktop/Sounds/subway.wav", streaming=False)
+pizzaFX = pyglet.media.load("/Users/johnyvino/Desktop/Sounds/pizza.wav", streaming=False)
+ratFX = pyglet.media.load( "/Users/johnyvino/Desktop/Sounds/rat.wav", streaming=False)
+cockroachFX = pyglet.media.load("/Users/johnyvino/Desktop/Sounds/cockroach.wav", streaming=False)
+gameoverFX = pyglet.media.load("/Users/johnyvino/Desktop/Sounds/gameover.wav", streaming=False)
+endcreditsFX = pyglet.media.load("/Users/johnyvino/Desktop/Sounds/endcredits.wav", streaming=False)  
+snackFX = pyglet.media.load("/Users/johnyvino/Desktop/Sounds/snack.wav", streaming=False)    
 
 
 userInput = ""
@@ -38,8 +38,14 @@ def getInput(text):
 
 
 def printintro ():
-    print "PROLOGUE"    
-    print "IT AINT EASY BEING THE INFAMOUS...."
+    print "PROLOGUE\n\n"    
+    print "IT AINT EASY BEING THE INFAMOUS PIZZA RAT." 
+    print "You humans have marginalized and reduced me to a pathetic MEME.\n\n"
+    print "I LOVE PIZZA! Is that so wrong? You don't see me posting images of you, mocking you when you hungrily scarf down $12 avocado toast and $6 sustainable shade grown coffee.\n\n"
+    print "Perhaps if you step into my dirty furry rodent paws, you will see the struggles I got through in search of that perfect discarded slice.\n\n"
+    print "READY TO PLAY?"
+
+    startstory()
 
 
 def printtitle ():
@@ -47,9 +53,8 @@ def printtitle ():
     myTitle = """
 
 
-
 $$$$$$$\ $$$$$$\ $$$$$$$$\ $$$$$$$$\  $$$$$$\        $$$$$$$\   $$$$$$\ $$$$$$$$\ $$\ 
-$$  __$$\ _$$  _|\____$$  |\____$$  |$$  __$$\       $$  __$$\ $$  __$$\ __$$  __|$$ |
+$$  __$$\\_$$  _|\____$$  |\____$$  |$$  __$$\       $$  __$$\ $$  __$$\\__$$  __|$$ |
 $$ |  $$ | $$ |      $$  /     $$  / $$ /  $$ |      $$ |  $$ |$$ /  $$ |  $$ |   $$ |
 $$$$$$$  | $$ |     $$  /     $$  /  $$$$$$$$ |      $$$$$$$  |$$$$$$$$ |  $$ |   $$ |
 $$  ____/  $$ |    $$  /     $$  /   $$  __$$ |      $$  __$$< $$  __$$ |  $$ |   \__|
@@ -57,56 +62,23 @@ $$ |       $$ |   $$  /     $$  /    $$ |  $$ |      $$ |  $$ |$$ |  $$ |  $$ |
 $$ |     $$$$$$\ $$$$$$$$\ $$$$$$$$\ $$ |  $$ |      $$ |  $$ |$$ |  $$ |  $$ |   $$\ 
 \__|     \______|\________|\________|\__|  \__|      \__|  \__|\__|  \__|  \__|   \__|
 """
-
-    
-
     print myTitle
-
-
-
-
-
-def printintro2 ():
-    print "YOU HUMANS HAVE MARGINALIZED AND REDUCED ME TO A PATHETIC MEME."
-    print "I LOVE PIZZA! IS THAT SO WRONG?!?!?" 
-    print "YOU DON'T SEE ME POSTING IMAGES OF YOU, MOCKING YOU WHEN YOU SCARF DOWN" 
-    print "$12 AVOCADO TOAST AND $6 SUSTAINABLE SHADE GROWN COFFEE."
-    print "PERHAPS IF YOU STEP INTO MY DIRTY RODENT PAWS,"
-    print "YOU WILL SEE THE STRUGGLES I GO THROUGH IN SEARCH OF THAT" 
-    print "PERFECT" 
-    print "DISCARDED" 
-    print "SLICE."
-    print "READY TO PLAY?"
-
-    startstory()
-
+                                                                                      
 
 def printpizza ():
-    print "pizza"
     myPizza = """
-                 ..
-               .....
-             .......=]
-            .....==[~==.
-           .....======..=
-          ....===O=~~=....~
-         ....=.===={#==~====.
-        .....=[.==)=======.====
-       .....==.(]====~===.==(===
-       ....====)==.#..=[=~&==(=.=.
-      .....~.=.=======.&#======.=.==
-      ....=====~@=.=$========~O===R==~
-      ....~=====]==.~====.===!====.====
-      ....===.H=.=.==.~.=..H=~===~==H=~~=
-      ....$=.=[.====~===~RO=H==.~=====~===.
-      .....====({==.=.========.]=.~.=$.===~.
+          // ""--.._
+         ||  (_)  _ "-._
+         ||    _ (_)    '-.
+         ||   (_)   __..-'
+          \\__..--""
+
       """
 
     print myPizza
 
 
 def printrat ():
-    print "rat"
     myRat = """
          __             _,-"~^"-.
        _// )      _,-"~`         `.
@@ -152,9 +124,7 @@ def printbagel ():
 
 
 def printskull ():
-    mySkull = """
-
-                                                                                                    
+    mySkull = """                                            
                                               .:///`                                                
                                          .+ymmhsssyyhddho-                                          
                                       -sdy+-`          `:ohy-                                       
@@ -183,8 +153,9 @@ def printskull ():
                            .`                                       -/.                             
                                                                            
                                                                            """
+    print mySkull      
 
-    print mySkull 
+
 
 
 def printhotdog ():
@@ -212,30 +183,24 @@ s++++oo+/::::::::::::::::::::::::::::::::::::::::::::::::::::::::::/`
                                                                       
                                                   """             
 
-    print myHotdog 
 
 def printcat ():
     myCat = """
 
-                              ==
-                             ==
-                            ==
-            ``````````      ==
-        ```==========```     ==
- /\```/\================`````==
-(  O O  )=====================
-=== ^ === ================
-  \ O / ==================
-   ''' ======        =====
-        ====         ====
-        ===          ===
-         ==          ==
-         ==          ==
-         ==          ==
-         WW          WW
-        ''          ''  
 
-"""
+      ( \
+       \ \
+       / /                |\\
+      / /     .-`````-.   / ^`-.
+      \ \    /         \_/  {|} `o
+       \ \  /   .---.   \\ _  ,--'
+        \ \/   /     \,  \( `^^^
+         \   \/\      (\  )
+          \   ) \     ) \ \
+           ) /__ \__  ) (\ \___
+          (___)))__))(__))(__))) """
+
+
 
     print myCat
 
@@ -269,10 +234,6 @@ ohddos-yMdo--.-+hdNMMNMy.....-/+sdNMMMMMMNh/dMo
   `//+ysmyddmdmmNMMMMdd//:/::oymMMMMMsdNhs/       
   `+mNmmddddmMmddNMNNmdhsoymMMMMNdyyso-`          
    `.://+oyo:/o++///:/:-:--:/:.`      """
-
-
-    print myAvocado
-
 
 def printkindbar ():
     myKindbar = """
@@ -363,9 +324,15 @@ def cls():
 
 
 def startstory():
-
+  print "PROLOGUE\n\n"    
+  print "IT AINT EASY BEING THE INFAMOUS PIZZA RAT." 
+  print "You humans have marginalized and reduced me to a pathetic MEME.\n\n"
+  print "I LOVE PIZZA! Is that so wrong? You don't see me posting images of you, mocking you when you hungrily scarf down $12 avocado toast and $6 sustainable shade grown coffee.\n"
+  print "Perhaps if you step into my dirty furry rodent paws, you will see the struggles I got through in search of that perfect discarded slice.\n"
+  print "READY TO PLAY?\n"
+  
   subwayFX.play()
-  userInput = getInput("Where you want to go? \n\n1.Downtown\n2.Uptown\n\n")
+  userInput = getInput("Where you want to go? \n\n1.Downtown  \n\n2.Uptown\n\n")
 
 
   #------------uptown-------------------------------------------------------------------------------------
@@ -378,11 +345,11 @@ def startstory():
       print ("you see cat!")
       catFX.play()
 
-      userInput1 = getInput("How you are going to attack the cat? \n\n1.Bite\n2.Strangle\n\n")
+      userInput1 = getInput("How you are going to attack the cat? \n\n1.Bite\n2.Trangle\n\n")
 
 
       if (userInput1 == "1"):
-          print ("cat runs away")
+          print ("Ohhhh!!!!!!! Yeaa....... Cat ran away")
       
       
       elif (userInput1 == "2"):
@@ -395,7 +362,7 @@ def startstory():
           print ("you reached uptown!\n")
 
       
-      userInput3 = getInput("choose one discarded snack: \n\n1.Bagel\n2.Hot dog\n\n")
+      userInput3 = getInput("\nChoose one discarded snack: \n\n1.Bagel\n2.Hot dog\n\n")
 
 
       if (userInput3 == "1"):
@@ -441,12 +408,12 @@ def startstory():
           printskull()
           print ("Bad choice! Poison everywhere.  Rest In Peace!")
           gameoverFX.play()
-
           userInput9 = getInput("Want to play again? \n\n1.Yes \n2.No\n\n")
           if (userInput9 == "1"):
              startstory()
           else:
            return()
+
 
       elif (userInput5 == "b"):
           cls()
@@ -513,6 +480,7 @@ def startstory():
       
       
       elif (userInput7 == "2"):
+          cls()
           printkindbar()
           print ("Cured my rumbling tummy but its not quite pizza!")
 
@@ -520,12 +488,12 @@ def startstory():
       else:
           print ("sorry try again")
 
-
+      cls()
       print ("In the tunnel...")
       printrat()
       ratFX.play()
 
-      userInput8 = getInput(" You run into your buddy Bagel Rat.\n He tells you there's good pizza at the Spring St stop. Lombardi's, Rubirosa,\n Prince Street Pizza plus school just started and lots of drunk students out tonight.\n Do you want to head to Spring St?\n\n1.Yes \n2.No\n\n")
+      userInput8 = getInput(" You run into your buddy Bagel Rat.\n He tells you there's good p's Lombardi's, Rubirosa,\n Prince Street Pizza plus school just started and lots of drunk students out tonnight.\n  Do you want to head to Spring St?\n\n1.Yes \n2.No?\n\n")
         
       
 
@@ -533,30 +501,20 @@ def startstory():
           cls()
           print ("Pizza Heaven! So much pizza so little time!")
           printpizza()
-          eattingRat()
+          eattingRat ()
           endcreditsFX.play()
-          time.sleep(20)
+          time.sleep(10)
       
       
-      elif (userInput8 == "2"):
+      elif (userInput7 == "2"):
           print ("GAME OVER. I guess you don't really want pizza!")
-          gameoverFX.play()
-          userInput10 = getInput("Want to play again? \n\n1.Yes \n2.No\n\n")
-          if (userInput10 == "1"):
-             startstory()
-          else:
-           return()
-
-          time.sleep(15)        
-
-
+          playFile(gameoverSound)
+          time.sleep(5)        
 
 
 def intro():
-  printintro()
   printtitle()
-  printintro2()
-
+  printintro()
 
 
 
